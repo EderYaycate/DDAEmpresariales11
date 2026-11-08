@@ -1,0 +1,5 @@
+.premieres { margin-top: 2.5rem; }
+.premieres h2 { margin-bottom: 1rem; }
+.premieres__skeletons { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.1rem; }
+.premieres__error { padding: 1.1rem; background: #fdecea; border: 1.5px solid #e0a39c; border-radius: var(--radius); display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.premieres__error button { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.45rem 0.9rem; background: var(--ink); color: #fff; border: 0; border-radius: 8px; font-weight: 600; }

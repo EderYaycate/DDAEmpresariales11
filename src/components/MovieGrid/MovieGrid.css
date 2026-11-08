@@ -1,0 +1,2 @@
+.grid { display: grid; gap: 1.1rem; }
+.empty { padding: 2rem 1rem; text-align: center; background: var(--card); border: 1.5px dashed var(--line); border-radius: var(--radius); color: var(--muted); }

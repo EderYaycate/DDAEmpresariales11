@@ -1,0 +1,17 @@
+.card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+.card__poster {
+  height: 150px; display: flex; align-items: flex-end; padding: 0.8rem;
+  background: linear-gradient(160deg, hsl(var(--hue) 55% 38%), hsl(calc(var(--hue) + 40) 60% 20%));
+  color: #fff; font-family: var(--font-display); font-weight: 800; font-size: 1.35rem; line-height: 1.1;
+}
+.card__body { padding: 0.85rem; display: flex; flex-direction: column; gap: 0.3rem; flex: 1; }
+.card__meta { color: var(--muted); font-size: 0.92rem; }
+.card__genres { font-size: 0.92rem; flex: 1; }
+.card__fav {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; margin-top: 0.5rem;
+  padding: 0.45rem 0.7rem; border: 1.5px solid var(--ink); background: transparent; color: var(--ink);
+  border-radius: 8px; font-weight: 600; transition: background 0.15s;
+}
+.card__fav:hover { background: var(--paper); }
+.card__fav--on { background: var(--ticket); border-color: var(--ticket); }
+.card__fav--on:hover { background: #e9a82a; }

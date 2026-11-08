@@ -1,0 +1,12 @@
+.header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.9rem 1.25rem; background: var(--ink); color: #fff;
+  position: sticky; top: 0; z-index: 5;
+}
+.header__brand { display: flex; align-items: center; gap: 0.6rem; font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; }
+.header__brand svg { color: var(--ticket); }
+.header__favorites {
+  display: flex; align-items: center; gap: 0.45rem; padding: 0.3rem 0.8rem;
+  border: 1.5px solid var(--ticket); border-radius: 999px; font-weight: 600;
+}
+.header__favorites svg { color: var(--ticket); }

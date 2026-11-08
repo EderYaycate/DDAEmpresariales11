@@ -1,0 +1,8 @@
+.carousel { list-style: none; margin: 0; padding: 0 0 0.75rem; display: flex; gap: 1.1rem; overflow-x: auto; scroll-snap-type: x mandatory; }
+.carousel__item { flex: 0 0 calc((100% - (var(--visible) - 1) * 1.1rem) / var(--visible)); scroll-snap-align: start; display: flex; flex-direction: column; gap: 0.35rem; }
+.carousel__poster {
+  height: 190px; display: flex; align-items: flex-end; padding: 0.9rem; border-radius: var(--radius);
+  background: linear-gradient(160deg, hsl(var(--hue) 55% 38%), hsl(calc(var(--hue) + 40) 60% 20%));
+  color: #fff; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; line-height: 1.1;
+}
+.carousel__genres { color: var(--muted); font-size: 0.92rem; }

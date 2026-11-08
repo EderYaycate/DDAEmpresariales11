@@ -1,0 +1,41 @@
+:root {
+  --ink: #1d2a44;
+  --paper: #eef1f6;
+  --card: #ffffff;
+  --line: #d5dbe6;
+  --muted: #5b667c;
+  --teal: #0f766e;
+  --ticket: #f4b73f;
+  --radius: 10px;
+  --font-display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.15; margin: 0; }
+h2 { font-size: 1.6rem; font-weight: 800; letter-spacing: -0.01em; }
+h3 { font-size: 1.05rem; font-weight: 600; }
+p { margin: 0; }
+
+.page { max-width: 1120px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+
+/* Utilities */
+.u-muted { color: var(--muted); }
+.u-stack > * + * { margin-top: 0.75rem; }
+
+button { font: inherit; cursor: pointer; }
+:focus-visible { outline: 3px solid var(--ticket); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
